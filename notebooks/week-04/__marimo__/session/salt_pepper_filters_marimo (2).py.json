@@ -1,0 +1,113 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "9fb0b5e960dcd321d39de45eab9fc99e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "dd69fe5059664b077d6fabe0b5687c0e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"salt-and-pepper-noise-min-max-and-median-filters\">Salt-and-pepper noise: min, max, and median filters</h1>\n<span class=\"paragraph\">This animation shows how local neighborhood filters operate on an\n8-bit grayscale image containing salt-and-pepper noise.</span>\n<ul>\n<li><strong>Min filter:</strong> suppresses bright salt pixels.</li>\n<li><strong>Max filter:</strong> suppresses dark pepper pixels.</li>\n<li><strong>Median filter:</strong> suppresses both while usually preserving edges\n  better than min/max filtering.</li>\n</ul>\n<span class=\"paragraph\">The red square marks the current filter position. The middle panel\nshows the neighborhood values, and the right panel shows the result\nbeing built progressively.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "dbb7f5ed91f812d4f9b59f9be1c22d61",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='vblA-0' random-id='1ea4153a-262f-a5ff-441c-48982def5327'><marimo-dropdown data-initial-value='[&quot;Median&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFilter&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Min&quot;,&quot;Max&quot;,&quot;Median&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='vblA-1' random-id='9ee6c5da-9ccc-eab3-73c9-3f60c29901eb'><marimo-dropdown data-initial-value='[&quot;3&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eKernel size&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;3&quot;,&quot;5&quot;,&quot;7&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='vblA-2' random-id='f3b6ae58-d5cf-9c14-061f-da4f7fbd8107'><marimo-slider data-initial-value='0.08' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSalt-and-pepper amount&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.2' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='vblA-3' random-id='7ce6eb46-8954-252c-dd2f-2312443f77f8'><marimo-number data-initial-value='7' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eRandom seed&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='9999' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "0b107562f4699df6007b33dd4d8b6552",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "b9e9f925cd7e5a2e2c1c70bf00161196",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "b3509c5bc5a7478eea9e3fbe87db5d37",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "afb011d6af3c74badaee3489907962fc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"interpretation\">Interpretation</h3>\n<span class=\"paragraph\">A <strong>3x3 minimum filter</strong> selects\nthe darkest value in each neighborhood. This suppresses isolated\nbright <strong>salt</strong> pixels, but also expands dark structures.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "faa30b7804ac53550a05c334a3aaa030",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "6b7b05e27104ef71c4ae707d69bcc7e9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"salt-and-pepper-noise-min-max-and-median-filters\">Salt-and-pepper noise: min, max, and median filters</h1>\n<span class=\"paragraph\">This animation demonstrates how neighborhood filters act on an\n8-bit grayscale image contaminated with <strong>salt-and-pepper noise</strong>.</span>\n<ul>\n<li><strong>Min filter</strong> replaces the center pixel by the minimum value in\n  the neighborhood. It is therefore especially effective against\n  <strong>salt noise</strong> (bright, value 255).</li>\n<li><strong>Max filter</strong> replaces the center pixel by the maximum value in\n  the neighborhood. It is especially effective against\n  <strong>pepper noise</strong> (dark, value 0).</li>\n<li><strong>Median filter</strong> replaces the center pixel by the median of the\n  neighborhood. It can suppress <strong>both salt and pepper noise</strong> while\n  preserving edges better than min/max filtering.</li>\n</ul>\n<span class=\"paragraph\">The red square indicates the current filter neighborhood. The right\npanel is revealed progressively in raster-scan order.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "dbb7f5ed91f812d4f9b59f9be1c22d61",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 2rem'><marimo-ui-element object-id='vblA-0' random-id='8c4f3cc1-9157-edee-d8c1-fbea066538f1'><marimo-dropdown data-initial-value='[&quot;Median&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eFilter&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;Min&quot;,&quot;Max&quot;,&quot;Median&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='vblA-1' random-id='b031d938-51d4-5695-60a4-ca59684e8cfb'><marimo-dropdown data-initial-value='[&quot;3&quot;]' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eKernel size&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-options='[&quot;3&quot;,&quot;5&quot;,&quot;7&quot;]' data-allow-select-none='false' data-searchable='false' data-full-width='false' data-disabled='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='vblA-2' random-id='9b5ed8ea-6747-0bf5-c25d-e307624188ec'><marimo-slider data-initial-value='0.08' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eSalt-and-pepper amount&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0.01' data-stop='0.2' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='vblA-3' random-id='c3fa4e31-083c-d0c6-e6e9-732801c8dc77'><marimo-number data-initial-value='7' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eRandom seed&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='0' data-stop='9999' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "889e65b8a665bbec5b24446bbfbe3bf3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "9936b3b1f0e669fed83346ffed648cc6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "1862670e2354633f084e3abf48802853",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "ca6ccec2989d5e95f189e07a52617986",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"interpretation\">Interpretation</h3>\n<span class=\"paragraph\">A <strong>3x3 median filter</strong> sorts the\nneighborhood values and chooses the middle one.</span>\n<span class=\"paragraph\">Isolated 0 and 255 values therefore have little influence unless they\noccupy a large fraction of the neighborhood. This makes median\nfiltering particularly suitable for <strong>salt-and-pepper noise</strong>.</span>\n<span class=\"paragraph\">Increasing the kernel size suppresses larger noise clusters, but also\nremoves progressively more fine image detail.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

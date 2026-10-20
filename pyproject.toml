@@ -1,0 +1,88 @@
+[project]
+name = "oip"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Till", email = "till@mci.sdu.dk" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipywidgets>=8.1.8",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.1",
+    "pandas>=3.0.5",
+    "scikit-image>=0.26.0",
+    "scipy>=1.18.0",
+    "sympy>=1.14.0",
+    "jupyter>=1.1.1",
+]
+
+
+[project.scripts]
+prog = "prog:main"
+
+[project.optional-dependencies]
+
+interactive = [
+    "plotly",
+    "ipywidgets",
+    "ttictoc>=0.5.6",
+]
+viewer = [
+    "napari",
+]
+pso = [
+    "pyswarms",
+]
+project = [
+    "h5py",
+]
+
+
+[build-system]
+requires = ["uv_build>=0.9.16,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.39.9",
+    "ipykernel>=7.2.0",
+    "pytest>=9.1.1",
+    "ruff>=0.16.1",
+]
+
+teaching = [
+    "ipykernel>=7.3.0",
+    "jupyter-annotation-tool-ipynbd>=0.1.6",
+    "nbgrader>=0.9.5",
+    "jupyterlab-slideshow>=0.3.4",
+]
+
+marimo = [
+    "marimo>=0.24.0",
+]
+  
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["nbgrader_config.py", "nbgrader_config.local.py"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "SIM",
+]
+extend-select = [
+    "RUF",
+    "PERF",
+]
+
+[tool.basedpyright]
+typeCheckingMode = "recommended"
+reportMissingTypeStubs = false
+exclude = ["**/nbgrader_config.py"]

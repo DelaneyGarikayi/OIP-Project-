@@ -1,0 +1,55 @@
+# LaTeX build products
+**/build/
+
+# Student personal work.
+# Everything below work/ stays local and is never tracked.
+work/*
+my-work/*
+!work/.gitkeep
+slides/*
+
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+
+# Jupyter
+.ipynb_checkpoints/
+
+# nbgrader runtime state
+nbgrader/gradebook.db
+#nbgrader/release/*
+nbgrader/submitted/*
+!nbgrader/submitted/till/
+!nbgrader/submitted/till/**
+nbgrader/autograded/*
+nbgrader/feedback/*
+!nbgrader/release/.gitkeep
+!nbgrader/submitted/.gitkeep
+!nbgrader/autograded/.gitkeep
+!nbgrader/feedback/.gitkeep
+
+# LaTeX build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+
+# OS/editor
+.DS_Store
+
+# Large data stays in Nextcloud
+data-external
