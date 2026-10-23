@@ -6,6 +6,19 @@ The repository is updated throughout the semester as new course material becomes
 
 ## Getting the course material
 
+##EVERDAY WORKFLOW
+git checkout main
+git pull origin main
+
+git checkout delaney
+git merge main
+
+# work
+
+git add .
+git commit -m "message"
+git push
+
 ### Option 1: Clone the Git repository
 
 The recommended option is to clone the repository. This makes updating the course material particularly easy:
