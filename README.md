@@ -6,7 +6,10 @@ The repository is updated throughout the semester as new course material becomes
 
 ## Getting the course material
 
-##EVERDAY WORKFLOW
+## EVERDAY WORKFLOW
+
+
+```bash
 git checkout main
 git pull origin main
 
@@ -18,6 +21,8 @@ git merge main
 git add .
 git commit -m "message"
 git push
+```
+
 
 ### Option 1: Clone the Git repository
 
