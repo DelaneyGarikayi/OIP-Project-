@@ -13,7 +13,7 @@ The repository is updated throughout the semester as new course material becomes
 git checkout main
 git pull origin main
 
-git checkout delaney
+git checkout your_branch_name
 git merge main
 
 # work
